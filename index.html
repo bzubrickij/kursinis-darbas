@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/e57c2904bb.js" crossorigin="anonymous"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+    </style>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js" defer></script>
+    <!-- Custom JS -->
+    <script src="myScript.js" defer></script>
+    <script src="swiper.js" defer></script>
+    <!-- Swiper css -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <!-- Custom css -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Big Namu darbai</title>
+  </head>
+  <body>
+    <div id="top"></div>
+    <! -------------------------------------------------------------------------------------------------------------------------->
+    <nav id="NAVIGATION">
+      <img id="logo1" src="1.1LogoMain.svg" alt="logo" />
+      <div id="menu">
+        <button class="myButton" onclick="myFunction1()">Features</button>
+        <button class="myButton" onclick="myFunction2()">About</button>
+        <button class="myButton" onclick="myFunction3()">Pricing</button>
+        <button class="myButton" onclick="myFunction4()">Reviws</button>
+        <button class="myButton" onclick="myFunction5()">Contact</button>
+        <button id="burger"><i class="fas fa-bars"></i></button>
+        <div class="linija"></div>
+        <div class="linija2"></div>
+      </div>
+    </nav>
+    <! -------------------------------------------------------------------------------------------------------------------------->
+    <div id="background" class="shimmer">
+      <div id="HOME">
+        <! ------------------------------------------------------------------->
+        <section id="container1">
+          <img id="logo2" src="1.1LogoMain.svg" alt="logo vel" />
+          <div>
+            <h1>
+              We need Money,<br />
+              Give us some of yours now!
+            </h1>
+            <hr />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae eaque ipsam voluptas excepturi praesentium blanditiis tempora doloribus, harum minus, ex cum, officiis ducimus assumenda necessitatibus labore pariatur vero
+              consequatur. Sapiente provident laborum delectus nihil animi!
+            </p>
+          </div>
+
+          <button id="button1">Give Money</button>
+        </section>
+        <! ------------------------------------------------------------------->
+        <section id="container2">
+          <h2 id="h2">Try your <span>FREE</span> Trial Today</h2>
+          <h2 id="h22">Your details</h2>
+          <form action="submit">
+            <br />
+            <input type="text" placeholder="First name" required oninvalid="this.setCustomValidity('Lietuviskai - Vartotojo vardas...Aisku....?')" oninput="this.setCustomValidity('')" /><br /><br />
+            <input type="text" placeholder="Last name" required oninvalid="this.setCustomValidity('O cia kas neaisku...?')" oninput="this.setCustomValidity('')" /><br /><br />
+            <input type="number" placeholder="Phone number" required oninvalid="this.setCustomValidity('Na tie skaiciai, telefono...tavo, TAIP, BUTINA!')" oninput="this.setCustomValidity('')" />
+            <h2 id="h23">Type of subscription</h2>
+            <div id="radio">
+              <input id="inputMonth" name="radio1" type="radio" required oninvalid="this.setCustomValidity('O cia tai jau kas paspaust pamirso?')" oninput="this.setCustomValidity('')" />
+              <label id="lableMonth" for="month">MONTHLY</label>
+              <input id="inputYear" name="radio1" type="radio" required oninvalid="this.setCustomValidity('Na, negi taip sunku paspausti CIA!?')" oninput="this.setCustomValidity('')" />
+              <label id="lableYear" for="year">YEARLY</label>
+            </div>
+            <button><span>GET STARTED</span></button>
+          </form>
+        </section>
+        <! ------------------------------------------------------------------>
+      </div>
+    </div>
+    <! -------------------------------------------------------------------------------------------------------------------------->
+    <section id="SOCIAL">
+      <div id="text">
+        <h1>Social Media</h1>
+        <p>Do you want tones of spam and ads? You'll be amaized of how mutch we've got, sign right up!</p>
+      </div>
+      <div id="iconsSocial">
+        <img src="facebook-logo.svg" alt="snukiaknyge" />
+        <img src="instagram-logo.svg" alt="selfIndulgence" />
+        <img src="twitter.svg" alt="BSmesseges" />
+        <img src="pinterest.svg" alt="whoUsesIt?" />
+        <div><i class="fas fa-rss"></i></div>
+      </div>
+    </section>
+    <! -------------------------------------------------------------------------------------------------------------------------->
+    <section id="TABS">
+      <div class="container">
+        <div class="item item1">
+          <button id="button" class="active" onclick="change(0)"><span>REGISTER</span></button>
+          <button id="button" onclick="change(1)"><span>APPLY</span></button>
+          <button id="button" onclick="change(2)"><span>RECIEVE</span></button>
+        </div>
+        <div class="item item2">
+          <h1>Register now, and enjoy limited time offer!</h1>
+          <p>
+            Only this week, all new customers recieve a free PENGUINE! WTF, why, and where we got ourselves real, live penguines? Sign up now, and find out!<br /><br />
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde nemo voluptatum consequatur quasi dicta natus quo, dolores temporibus explicabo, et molestiae suscipit at impedit eveniet atque possimus totam! Iure, dignissimos. Lorem, ipsum
+            dolor sit amet consectetur adipisicing elit. Unde nemo voluptatum consequatur quasi dicta natus quo, dolores temporibus explicabo, et molestiae suscipit at impedit eveniet atque possimus totam! Iure, dignissimos.
+          </p>
+        </div>
+        <div class="item item2 hide">
+          <h1>Your poor and desperate? Apply for our special program!</h1>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, consectetur, iste sint rerum accusantium pariatur aspernatur nihil dignissimos iusto dolorum optio esse voluptatem eveniet, dolores officia soluta ab accusamus?
+            Provident!<br /><br />
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde nemo voluptatum consequatur quasi dicta natus quo, dolores temporibus explicabo, et molestiae suscipit at impedit eveniet atque possimus totam! Iure, dignissimos. Lorem, ipsum
+            dolor sit amet consectetur adipisicing elit.
+          </p>
+        </div>
+        <div class="item item2 hide">
+          <h1>Recieve a complimentary gift basket!</h1>
+          <p>
+            Culpa, consectetur, iste sint rerum accusantium pariatur aspernatur nihil dignissimos iusto dolorum optio esse voluptatem eveniet, dolores officia soluta ab accusamus? Provident!<br /><br />
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde nemo voluptatum consequatur quasi dicta natus quo, dolores temporibus explicabo, et molestiae suscipit at impedit eveniet atque possimus totam! Iure, dignissimos. Lorem, ipsum
+            dolor sit amet consectetur adipisicing elit. Unde nemo voluptatum consequatur quasi dicta natus quo, dolores temporibus explicabo, et molestiae suscipit at impedit eveniet atque possimus totam! Iure, dignissimos.
+          </p>
+        </div>
+        <div class="item item2 hide">
+          <h1>Agreement, each Contributor grants the licenses granted by Licensor and any related settlement negotiations.</h1>
+          <p>
+            You may distribute the Source Code for any kind of work (such as deliberate and grossly negligent acts) or agreed to in writing, Licensor provides the Work be passed to you, then the only way you could satisfy both it and "any later
+            version", you have satisfied the requirements of this License may be marked as "OSI Certified Open Source License Version 2.0 (the 'License'). You may create a Larger Work; and (b) under Patent Claims infringed by the terms of this
+            license, then do not accept this License, Apple hereby consent to the offer to sell, sell, import, and otherwise transfer the Contribution is added by the Contributor, such addition of the license from time to time. Each version will be
+            given a distinguishing version number.
+          </p>
+        </div>
+        <div class="item item2 hide">
+          <h1>THIS SOFTWARE IS PROVIDED ON AN "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF MERCHANTABILITY</h1>
+          <p>
+            Once Original Code or ii) the combination of the source code means all the notices that do not conflict with standard executables and testcases, giving the non-standard executables and testcases, which must be included with each copy of
+            this Agreement, each Contributor grants the licenses granted by Licensor and any related settlement negotiations. The Indemnified Contributor must: a) promptly notify the Commercial Contributor in, the state and federal courts within that
+            District with respect to the Program under this License. If, as a consequence you may do only in or among countries not thus excluded.
+          </p>
+        </div>
+        <div class="item item2 hide">
+          <h1>Subject to the use is attributed and the section as a Free Software Foundation, write to the terms of this License, shall survive.</h1>
+          <p>
+            In such a Derived Work is distributed under the terms of this License issued under Section 2(b) shall terminate if it has not been modified, or has been modified. If you provide valid instructions or cease distribution within thirty (30)
+            days of becoming aware of such Commercial Contributor then makes performance claims, or offers warranties related to applicable law or regulation which provides that the work was authored and/or last substantially modified. Include also a
+            statement that the imported text is available from <http://www.php.net/>".
+          </p>
+        </div>
+        <button id="button" onclick="change(3)" class="item item4"></button>
+        <button id="button" onclick="change(4)" class="item item5"></button>
+        <button id="button" onclick="change(5)" class="item item6"></button>
+      </div>
+    </section>
+    <! -------------------------------------------------------------------------------------------------------------------------->
+    <section id="JUST">
+      <img class="shimmer" src="1.1LogoMain.svg" alt="logo vis dar tas pats" />
+      <div class="text">
+        <h1>
+          Lorem ipsum dolor<br />
+          erat meresuada
+        </h1>
+        <hr />
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur minima aliquam corrupti, possimus nulla labore asperiores inventore placeat debitis obcaecati tempore dolores beatae?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia tempore eveniet aperiam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga est aliquam soluta aut quaerat a harum tenetur, velit cupiditate minima veniam quos dolorem?</p>
+      </div>
+    </section>
+    <! -------------------------------------------------------------------------------------------------------------------------->
+    <section id="WHY">
+      <h1>WHY GIVING US MONEY IS AWESOM</h1>
+      <hr />
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <div class="icons">
+        <div class="iconSub">
+          <i style="font-size: 50px; color: #e27866" class="fas fa-shield-alt"></i>
+          <h2>Rubish design</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores harum eaque voluptas.</p>
+        </div>
+        <div class="iconSub">
+          <i style="font-size: 50px; color: #e27866" class="fas fa-cannabis"></i>
+          <h2>High support</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, omnis placeat.</p>
+        </div>
+        <div class="iconSub">
+          <i style="font-size: 50px; color: #e27866" class="fas fa-cocktail"></i>
+          <h2>Drunk developers</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo?</p>
+        </div>
+      </div>
+    </section>
+    <! -------------------------------------------------------------------------------------------------------------------------->
+    <section id="PRICING">
+      <h1>Pricing Options</h1>
+      <hr />
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+
+      <div class="swiper swiper1">
+        <div class="swiper-wrapper swiper-wrapper1">
+          <!-- Slides -->
+          <div class="swiper-slide slide slide1">
+            <div class="highlited">
+              <h1 id="name">Basic</h1>
+              <h1 id="price"><span>$</span>0</h1>
+              <p id="monthly">Monthly Paymenet</p>
+            </div>
+            <p>1GB OF SPACE FOR PORN</p>
+            <p>10Gb Of Viruses</p>
+            <p>3 LINKS TO BUY DRUGS</p>
+            <p>BASIC CUSTOMAIZAITION</p>
+            <p>WORDPRESS INTEGRATION</p>
+            <p id="last">NO RESPONCE TO YOUR EMAILS</p>
+          </div>
+          <div class="swiper-slide slide slide2">
+            <div class="highlited">
+              <h1 id="name">Proffesional</h1>
+              <h1 id="price"><span>$</span>19</h1>
+              <p id="monthly">Monthly Paymenet</p>
+            </div>
+            <p id="line" class="popular">OUR MOST POPULAR</p>
+            <p>5GB OF SPACE FOR PORN</p>
+            <p>50Gb Of Viruses</p>
+            <p>12 LINKS TO BUY DRUGS</p>
+            <p>ADVANCES CUSTOMAIZAITION</p>
+            <p>WORDPRESS INTEGRATION</p>
+            <p id="last">SOME RESPONCE TO YOUR EMAILS</p>
+          </div>
+          <div class="swiper-slide slide slide3">
+            <div class="highlited">
+              <h1 id="name">Enterprise</h1>
+              <h1 id="price"><span>$</span>70</h1>
+              <p id="monthly">Monthly Paymenet</p>
+            </div>
+            <p>UNLIMITED SPACE FOR PORN</p>
+            <p>50Gb Of Viruses</p>
+            <p>12 LINKS TO BUY DRUGS</p>
+            <p>ADVANCES CUSTOMAIZAITION</p>
+            <p>WORDPRESS INTEGRATION</p>
+            <p id="last">24/7 DRUGS DELIVERY</p>
+          </div>
+        </div>
+        <div class="swiper-button-next swiper-button-next-mine"></div>
+        <div class="swiper-button-prev swiper-button-prev-mine"></div>
+      </div>
+    </section>
+    <! -------------------------------------------------------------------------------------------------------------------------->
+    <section id="TESTIMONIALS">
+      <h1>WHAT OUR CUSTOMERS ARE SAYING</h1>
+      <hr />
+      <div class="swiper swiper2">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper swiper-wrapper2">
+          <!-- Slides -->
+          <div class="swiper-slide slide slide2">
+            <p>My teacher once told me, that I'll be a nobody. I've started selling drugs when I was 8. With your help I've went digital, now I'm a baller!</p>
+            <div class="flex">
+              <div id="photo" class="pic1"></div>
+              <div class="name">
+                <h1>Susan W.</h1>
+                <p>Meth cook</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide slide slide2">
+            <p>This company helped me become a better scammer, I can now ruin people lives on a greater scale!</p>
+            <div class="flex">
+              <div id="photo" class="pic2"></div>
+              <div class="name">
+                <h1>John S.</h1>
+                <p>Nigerian prince</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide slide slide2">
+            <p>Pimping on the streets is cold and uncomfortable. Moved online, and now enyoing life.</p>
+            <div class="flex">
+              <div id="photo" class="pic3"></div>
+              <div class="name">
+                <h1>Jeremy H.</h1>
+                <p>Local Pimp</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide slide slide2">
+            <p>You have helped me grow my cat distrtribution bussines exponentialy. Now I can have even more cats!</p>
+            <div class="flex">
+              <div id="photo" class="pic4"></div>
+              <div class="name">
+                <h1>Meghan G.</h1>
+                <p>Crazy Cat Lady</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide slide slide2">
+            <p>With your help, I have recruited thousands of new belivers around the globe!</p>
+            <div class="flex">
+              <div id="photo" class="pic5"></div>
+              <div class="name">
+                <h1>Alan P.</h1>
+                <p>UFO Resercher</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide slide slide2">
+            <p>Started a new platform, so now I can spread the truth from edge to edge.</p>
+            <div class="flex">
+              <div id="photo" class="pic6"></div>
+              <div class="name">
+                <h1>Dylan M.</h1>
+                <p>Flat Earther</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination swiper-pagination2"></div>
+        <div class="swiper-button-prev swiper-button-prev2"></div>
+        <div class="swiper-button-next swiper-button-next2"></div>
+      </div>
+    </section>
+    <! -------------------------------------------------------------------------------------------------------------------------->
+    <section id="CONTACT">
+      <h1>CONTACT US</h1>
+      <hr />
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <form action="submit">
+        <input type="text" placeholder="First name" required oninvalid="this.setCustomValidity('Lietuviskai - Vartotojo vardas...Aisku....?')" oninput="this.setCustomValidity('')" /><br /><br />
+        <input type="text" placeholder="Last name" required oninvalid="this.setCustomValidity('O cia kas neaisku...?')" oninput="this.setCustomValidity('')" /><br /><br />
+        <input type="number" placeholder="Phone number" required oninvalid="this.setCustomValidity('Na tie skaiciai, telefono...tavo, TAIP, BUTINA!')" oninput="this.setCustomValidity('')" /><br /><br />
+        <input id="personalIn" name="radio2" type="radio" required oninvalid="this.setCustomValidity('Na, negi taip sunku paspausti CIA!?')" oninput="this.setCustomValidity('')" />
+        <label id="radioLable" for="month">PERSONAL</label>
+        <input id="companyIn" name="radio2" type="radio" required oninvalid="this.setCustomValidity('O cia tai jau kas paspaust pamirso?')" oninput="this.setCustomValidity('')" />
+        <label id="radioLable" for="year">COMPANY</label><br />
+        <button>SEND</button>
+      </form>
+    </section>
+    <! -------------------------------------------------------------------------------------------------------------------------->
+    <footer id="FOOTER">
+      <div id="social">
+        <a href="https://www.facebook.com/"><img src="facebook-logo.svg" alt="snukiaKnyge" /></a>
+        <a href="https://www.instagram.com/"><img src="instagram-logo.svg" alt="koksAsGrazus" /></a>
+        <a href="https://www.facebook.com/"><img src="twitter.svg" alt="nesamoniuDalinimas" /></a>
+        <a href="https://www.pinterest.com/"><img src="pinterest.svg" alt="paveikslukaiKazkokie" /></a>
+        <a href="https://www.facebook.com/"> <i class="fas fa-rss"></i></a>
+      </div>
+      <div>
+        <p>© 2022 Cheshire County</p>
+      </div>
+    </footer>
+    <! -------------------------------------------------------------------------------------------------------------------------->
+  </body>
+</html>
